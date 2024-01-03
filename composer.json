@@ -12,7 +12,7 @@
   "require": {
     "php": ">=8.0",
     "guzzlehttp/guzzle": "^7.2",
-    "laravel/framework": "^9",
+    "laravel/framework": "^10.10",
     "laravel/prompts": "^0.1.13",
     "laravel/sanctum": "^3.3",
     "laravel/tinker": "^2.8",
@@ -25,5 +25,6 @@
       "Console\\Commands\\": "src/Console/Commands/"
     }
   },
-  "minimum-stability": "dev"
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }
