@@ -2,7 +2,7 @@
 
 namespace AI\Console\Commands;
 
-use App\AI\Assistant;
+use AI\AI\Assistant;
 use Illuminate\Console\Command;
 use Laravel\Prompts\{outro, text, info, spin};
 
