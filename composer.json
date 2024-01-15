@@ -25,8 +25,7 @@
     "laravel/prompts": "^0.1.15",
     "laravel/sanctum": "^3.3",
     "laravel/tinker": "^2.8",
-    "openai-php/laravel": "^0.8.1",
-    "ngvritishvili/open_ai_cli": "^1.0"
+    "openai-php/laravel": "^0.8.1"
   },
   "autoload": {
     "psr-4": {
