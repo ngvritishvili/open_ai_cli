@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Console\Commands;
+namespace AI\Console\Commands;
 
 use App\AI\Assistant;
 use Illuminate\Console\Command;
-use function Laravel\Prompts\{outro, text, info, spin};
+use Laravel\Prompts\{outro, text, info, spin};
 
 class ChatCommand extends Command
 {

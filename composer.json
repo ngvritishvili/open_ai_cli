@@ -1,16 +1,16 @@
 {
   "name": "ngvritishvili/open_ai_cli",
-  "description": "integrate open ai with php for cli support",
-  "type": "laravel-package",
+  "description": "Integrate OpenAI with PHP for CLI support",
+  "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "nikoloz Gvritishvili",
+      "name": "Nikoloz Gvritishvili",
       "email": "ngvritishvili@hotmail.com"
     }
   ],
   "require": {
-    "php": ">=8.0",
+    "php": "^8.0",
     "guzzlehttp/guzzle": "^7.2",
     "laravel/framework": "^10.10",
     "laravel/prompts": "^0.1.13",
@@ -21,8 +21,8 @@
   "autoload": {
     "psr-4": {
       "AI\\": "src/AI",
-      "Config\\": "src/config",
-      "Console\\Commands\\": "src/Console/Commands/"
+      "Config\\": "src/Config",
+      "Console\\": "src/Console"
     }
   },
   "minimum-stability": "dev",

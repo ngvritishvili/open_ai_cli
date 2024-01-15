@@ -1,5 +1,4 @@
 <?php
-// File: src/AIPackageServiceProvider.php
 
 namespace AI;
 
@@ -16,7 +15,7 @@ class AIPackageServiceProvider extends ServiceProvider
         // Register the command
         if ($this->app->runningInConsole()) {
             $this->commands([
-                Console\Commands\ChatCommand::class,
+                Console\ChatCommand::class,
             ]);
         }
     }
