@@ -20,6 +20,20 @@ class AIPackageServiceProvider extends ServiceProvider
         }
     }
 
+    private function publishConfiguration($forcePublish = false)
+    {
+        $params = [
+            '--provider' => "ngvritishvili\open_ai_cli\AIPackageServiceProvider",
+            '--tag' => "config"
+        ];
+
+        if ($forcePublish === true) {
+            $params['--force'] = true;
+        }
+
+        $this->call('vendor:publish', $params);
+    }
+
     public function register()
     {
         // Register your package services here.
