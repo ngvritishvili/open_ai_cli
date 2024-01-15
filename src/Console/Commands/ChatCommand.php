@@ -4,7 +4,10 @@ namespace AI\Console\Commands;
 
 use AI\AI\Assistant;
 use Illuminate\Console\Command;
-use Laravel\Prompts\{outro, text, info, spin};
+use function Laravel\Prompts\text;
+use function Laravel\Prompts\outro;
+use function Laravel\Prompts\info;
+use function Laravel\Prompts\spin;
 
 class ChatCommand extends Command
 {
