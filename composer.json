@@ -3,12 +3,21 @@
   "description": "Integrate OpenAI with PHP for CLI support",
   "type": "library",
   "license": "MIT",
+  "keywords": [
+    "cli",
+    "laravel",
+    "chatgpt",
+    "open-ai",
+    "openai",
+    "integration"
+  ],
   "authors": [
     {
       "name": "Nikoloz Gvritishvili",
       "email": "ngvritishvili@hotmail.com"
     }
   ],
+  "homepage": "https://github.com/ngvritishvili/open_ai_cli",
   "require": {
     "php": "^8.0",
     "guzzlehttp/guzzle": "^7.2",
@@ -32,6 +41,10 @@
       "providers": [
         "AI\\AIPackageServiceProvider"
       ]
+    },
+    "branch-alias": {
+      "dev-main": "1.x-dev",
+      "dev-master": "1.x-dev"
     }
   }
 }
