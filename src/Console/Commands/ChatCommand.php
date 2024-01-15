@@ -4,7 +4,7 @@ namespace AI\Console\Commands;
 
 use AI\AI\Assistant;
 use Illuminate\Console\Command;
-use Laravel\Prompts\{outro, textPrompt, info, spin};
+use Laravel\Prompts\{outro, text, info, spin};
 
 class ChatCommand extends Command
 {
@@ -33,7 +33,7 @@ class ChatCommand extends Command
             $chat->systemMessage($this->option('system'));
         }
 
-        $question = textPrompt(
+        $question = text(
             label: 'What is your question for AI?',
             required: true
         );
@@ -42,7 +42,7 @@ class ChatCommand extends Command
             spin(fn() => $chat->send($question), 'Sending request...')
         );
 
-        while ($question = textPrompt('Do you want to respond?')) {
+        while ($question = text('Do you want to respond?')) {
             info(
                 spin(fn() => $chat->send($question), 'Sending request...')
             );
