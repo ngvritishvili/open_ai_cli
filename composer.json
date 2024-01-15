@@ -30,7 +30,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "ngvritishvili\\open_ai_cli\\AIPackageServiceProvider"
+        "AI\\AIPackageServiceProvider"
       ]
     }
   }
