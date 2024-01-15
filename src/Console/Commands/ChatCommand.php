@@ -13,7 +13,7 @@ class ChatCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'chat {--system=}';
+    protected $signature = 'ai-cli:chat {--system=}';
 
     /**
      * The console command description.
