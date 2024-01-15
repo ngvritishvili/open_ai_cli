@@ -47,8 +47,8 @@
       ]
     },
     "branch-alias": {
-      "dev-main": "1.x-dev",
-      "dev-master": "1.x-dev"
+      "dev-main": "dev-main",
+      "1.0.0": "1.0.0"
     }
   }
 }
