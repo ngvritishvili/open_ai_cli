@@ -1,5 +1,6 @@
 {
   "name": "ngvritishvili/open_ai_cli",
+  "version": "1.0.0",
   "description": "Integrate OpenAI with PHP for CLI support",
   "type": "library",
   "license": "MIT",
