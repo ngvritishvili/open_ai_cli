@@ -45,9 +45,15 @@ class ChatCommand extends Command
             spin(fn() => $chat->send($question), 'Sending request...')
         );
 
-        while ($question = text('Do you want to respond?') or $question != 'no') {
+        while (true) {
+            $response = text('Do you want to respond?');
+
+            if (in_array(strtolower($response), ['no', 'exit', 'finish'])) {
+                break;
+            }
+
             info(
-                spin(fn() => $chat->send($question), 'Sending request...')
+                spin(fn() => $chat->send($response), 'Sending request...')
             );
         }
 
