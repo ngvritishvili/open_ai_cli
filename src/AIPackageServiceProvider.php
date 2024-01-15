@@ -15,7 +15,7 @@ class AIPackageServiceProvider extends ServiceProvider
         // Register the command
         if ($this->app->runningInConsole()) {
             $this->commands([
-                Console\ChatCommand::class,
+                Console\Commands\ChatCommand::class,
             ]);
         }
     }
