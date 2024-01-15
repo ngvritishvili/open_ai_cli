@@ -7,7 +7,7 @@ Integrate AI CLI for you laravel project to communicate with open AI directly fr
  
 ## Install
 
-`composer require ngvritishvili/open_ai_cli:dev-main`
+`composer require ngvritishvili/open_ai_cli:dev-main --with-all-dependencies`
 
 After installation run command to install open-ai: `php artisan openai:install` \
 Add variable in .env file : 
