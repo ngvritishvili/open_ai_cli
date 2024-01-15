@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "AI\\": "src/AI",
+      "AI\\": "src/",
       "Config\\": "src/Config",
       "Console\\": "src/Console"
     }
