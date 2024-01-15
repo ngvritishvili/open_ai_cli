@@ -1,6 +1,6 @@
 <?php
 
-namespace App\AI;
+namespace AI\AI;
 
 use OpenAI\Laravel\Facades\OpenAI;
 
