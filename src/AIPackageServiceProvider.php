@@ -2,6 +2,7 @@
 
 namespace AI;
 
+use AI\Console\Commands\ChatCommand;
 use Illuminate\Support\ServiceProvider;
 
 class AIPackageServiceProvider extends ServiceProvider
@@ -15,7 +16,7 @@ class AIPackageServiceProvider extends ServiceProvider
         // Register the command
         if ($this->app->runningInConsole()) {
             $this->commands([
-                Console\Commands\ChatCommand::class,
+                ChatCommand::class,
             ]);
         }
     }
